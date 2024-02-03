@@ -22,9 +22,9 @@ public sealed class SciFiWeaponFactory : IWeaponFactory
     public IOffensiveWeapon CreateOffensiveWeapon() => new PlasmaBlaster();
 }
 
-public sealed record EnergyShield : IDefensiveWeapon;
+public sealed class EnergyShield : IDefensiveWeapon;
 
-public sealed record PlasmaBlaster : IOffensiveWeapon;
+public sealed class PlasmaBlaster : IOffensiveWeapon;
 
 #endregion
 
@@ -36,8 +36,8 @@ public sealed class MedievalFactory : IWeaponFactory
     public IOffensiveWeapon CreateOffensiveWeapon() => new TwinDaggers();
 }
 
-public sealed record WoodenShield : IDefensiveWeapon;
+public sealed class WoodenShield : IDefensiveWeapon;
 
-public sealed record TwinDaggers : IOffensiveWeapon;
+public sealed class TwinDaggers : IOffensiveWeapon;
 
 #endregion
