@@ -1,5 +1,18 @@
 ﻿namespace DesignPatterns.Source.Behavioral;
 
+/*
+ * thoughts
+ * - why linked list instead of a collection in the pipeline?
+ *   - the latter could allow for better logging
+ *   - would it also make it easy to return the end value?
+ *   - can parallelize it if needed
+ *   - linked list would increase the stack
+ * - this vs decorator
+ *  - maybe CoR allows nodes to end the chain while decorator always calls every layer?
+ * - is my input & processor pattern just chain of responsibility but instead of passing the input to all the processors (like in CoR) it has a dictionary and knows what processor to call based on the input type?
+ *  - unless the processor was chosen not just by input type but also by a runtime value within the input?
+ */
+
 public class Score
 {
     public int Value { get; set; }
